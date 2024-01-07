@@ -1,0 +1,110 @@
+:root {
+    --grey: #e0e0e0;
+    --blue: #3498db; 
+}
+
+body {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    color: var(--blue);
+    border: 3px solid var(--grey);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    flex-direction: column; /* set elements  as a column so above each other*/
+}
+
+.circles {
+    display: flex;
+    flex-direction: row; /* set elements as a column so beside each other*/
+    justify-content: space-between;
+    width: 350px;
+    max-width: 100%;
+}
+
+.progress-container {
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.progress-container::before {
+    content: ''; /* required when using before/after */
+    background-color: var(--grey); /* use root's variables */
+    position: absolute; /* relative to progress-container which has relative position*/
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    transform: translateY(-50%); /*centers the element to the exact middle of y-axis */
+    z-index: -1;
+}
+
+.progress-line {
+    background-color: var(--blue);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.btn {
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: var(--grey);
+    cursor: not-allowed;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.circle {
+    background-color: white;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid var(--grey);
+    height: 30px;
+    width: 30px;
+    transition: .3s ease;
+}
+
+.circle.active {
+    border: 3px solid var(--blue);
+}
