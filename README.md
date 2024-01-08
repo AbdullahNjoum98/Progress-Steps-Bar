@@ -7,6 +7,7 @@ This is a pretty simple project to demonstrate a progress steps bar using pure h
 3. The progress bar and the circles are being filled to represent which stage you're at.
 4. Transition and Transformation effects are applied to enhance UX.
 
+- Live Demo: https://main--unique-sunshine-b33483.netlify.app/
 
 - 1st Stage View:
 <img width="960" alt="image" src="https://github.com/AbdullahNjoum98/Progress-Steps-Bar/assets/56254725/db71ac03-9e69-4894-9c82-3f926a51a3b1">
