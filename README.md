@@ -1,7 +1,7 @@
-# Progress-Steps-Bar
-Progress Steps Bar using HTML, CSS and JS 
+# Progress Steps Bar
+This project showcases a unique and creative design, potentially for a personal blog or a portfolio. The site's design elements are bright and engaging, fitting the "sunshine" theme.
 
-This is a pretty simple project to demonstrate a progress steps bar using pure html, css and javascript. I has the following functions:
+This is a simple project to demonstrate a progress steps bar using pure html, css and javascript. I has the following functions:
 1. Prev/Next buttons are used to navigate through the steps.
 2. Prev/Next buttons are being disabled when reaching their peak (prev is disabled at the 1st element, next at the last one).
 3. The progress bar and the circles are being filled to represent which stage you're at.
